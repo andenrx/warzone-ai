@@ -7,12 +7,13 @@ setup(
     url='https://github.com/andenrx/warzone-ai',
     author='Andrew Bauer',
     author_email='arbauer@amazon.com',
-    packages=['wzai'],
+    packages=find_packages("."),
     install_requires=[
        "numpy",
        "requests",
        "networkx",
        "wonderwords",
+       "gymnasium",
     ],
     extras_require={
         "nn": [
